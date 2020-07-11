@@ -1,0 +1,36 @@
+{
+  "firefox": {
+    "default": "59.0",
+    "versions": {
+      "58.0": {
+        "image": "selenoid/vnc:firefox_58.0",
+        "port": "4444",
+        "path": "/wd/hub"
+      },
+      "59.0": {
+        "image": "selenoid/vnc:firefox_59.0",
+        "port": "4444",
+        "path": "/wd/hub"
+      }
+    }
+  },
+  "chrome": {
+    "default": "64.0",
+    "versions": {
+      "64.0": {
+        "image": "selenoid/vnc:chrome_64.0",
+        "port": "4444",
+        "path": "/",
+        "tmpfs": {"/tmp": "size=128m"},
+        "env" : ["LANG=ru_RU.UTF-8", "LANGUAGE=ru:en", "LC_ALL=ru_RU.UTF-8", "TZ=Europe/Kiev"],
+        "shmSize": 268435456
+      },
+      "65.0": {
+        "image": "selenoid/vnc:chrome_65.0",
+        "port": "4444",
+        "path": "/",
+        "shmSize": 268435456
+      }
+    }
+  }
+}
