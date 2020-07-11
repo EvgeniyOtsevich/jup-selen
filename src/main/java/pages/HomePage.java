@@ -26,7 +26,7 @@ public class HomePage {
         return h2Items;
     }*/
     public HomePage closePopup() {
-        $("[title=\"Close (Esc)\"]").click();
+        $(".cookieinfo-close").click();
         return this;
     }
 
